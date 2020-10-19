@@ -1,0 +1,4 @@
+#Tue Oct 06 11:48:05 COT 2020
+base.0=/home/jhon/Escritorio/Flutter/conectcarga/conectcarga/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

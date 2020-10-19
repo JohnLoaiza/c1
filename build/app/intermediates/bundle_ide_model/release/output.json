@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "applicationId": "net.citica.conectcargav2",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "BUNDLE"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": -1,
+        "fullName": "",
+        "baseName": "",
+        "dirName": ""
+      },
+      "path": "../../../../../android/app/release/app-release.aab",
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" group="android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-346017523/barcode_scan.iml" filepath="$PROJECT_DIR$/.idea/modules/-346017523/barcode_scan.iml" group="android/barcode_scan" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1863402961/flutter_keyboard_visibility.iml" filepath="$PROJECT_DIR$/.idea/modules/-1863402961/flutter_keyboard_visibility.iml" group="android/flutter_keyboard_visibility" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1410016455/flutter_plugin_android_lifecycle.iml" filepath="$PROJECT_DIR$/.idea/modules/1410016455/flutter_plugin_android_lifecycle.iml" group="android/flutter_plugin_android_lifecycle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1309948092/google_maps_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/1309948092/google_maps_flutter.iml" group="android/google_maps_flutter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1112663911/map_launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/-1112663911/map_launcher.iml" group="android/map_launcher" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1115771204/path_provider.iml" filepath="$PROJECT_DIR$/.idea/modules/-1115771204/path_provider.iml" group="android/path_provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1830376244/path_provider_macos.iml" filepath="$PROJECT_DIR$/.idea/modules/-1830376244/path_provider_macos.iml" group="android/path_provider_macos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1942987839/shared_preferences.iml" filepath="$PROJECT_DIR$/.idea/modules/1942987839/shared_preferences.iml" group="android/shared_preferences" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-100564818/shared_preferences_macos.iml" filepath="$PROJECT_DIR$/.idea/modules/-100564818/shared_preferences_macos.iml" group="android/shared_preferences_macos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1187989745/shared_preferences_web.iml" filepath="$PROJECT_DIR$/.idea/modules/-1187989745/shared_preferences_web.iml" group="android/shared_preferences_web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/341788713/url_launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/341788713/url_launcher.iml" group="android/url_launcher" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1522902018/url_launcher_macos.iml" filepath="$PROJECT_DIR$/.idea/modules/-1522902018/url_launcher_macos.iml" group="android/url_launcher_macos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/489388831/url_launcher_web.iml" filepath="$PROJECT_DIR$/.idea/modules/489388831/url_launcher_web.iml" group="android/url_launcher_web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-220621796/webview_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/-220621796/webview_flutter.iml" group="android/webview_flutter" />
+    </modules>
+  </component>
+</project>

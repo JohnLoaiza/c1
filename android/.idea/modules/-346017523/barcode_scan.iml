@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":barcode_scan" external.linked.project.path="$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":barcode_scan" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="4.0.1" />
+        <option name="LAST_KNOWN_AGP_VERSION" value="4.0.1" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="release" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleRelease" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileReleaseSources" />
+        <afterSyncTasks>
+          <task>generateReleaseSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/res;file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/res;file://$MODULE_DIR$/../../../../build/barcode_scan/generated/res/rs/release" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/res;file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/res;file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../build/barcode_scan/tmp/kotlin-classes/release" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../build/barcode_scan/intermediates/compile_only_not_namespaced_r_class_jar/release/R.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/cc96f961c84ecec8afa99f7a741db37e/material-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/ef5a23f2376ac089bc35f75da5fe38d7/appcompat-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/fcbad6482cdb89775d19d445deff9f89/jetified-kotlin-stdlib-jdk7-1.3.61.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/025fd5471a83930145f595393495be4e/jetified-zxing-1.9.13-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/6dad0ac2cf6ce02e4da234e85172ccab/jetified-protobuf-lite-3.0.1.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/864aee752b5430a0a4da23cf06271152/jetified-flutter_embedding_release-1.0.0-9d5b21729ff53dbf8eadd8bc97e0e30d77abec95.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/eac9917d1dcfe7d9c633cb68711061ba/cardview-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/3254b536deeb719a037e80fa34166cc7/coordinatorlayout-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/eda3c05735dbfe3407bb408d910f0470/jetified-viewpager2-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/dfd6c33cb8861fc8679ddc5e465630cb/fragment-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/4f12733df9a227bbc6771ec2e960da33/recyclerview-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/820e5156d1a82a3ab0ceedcb2b58c668/transition-1.2.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/33cb49a0f27257b88832fdc01240dcfd/jetified-appcompat-resources-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/748d4065e2e58774d8da0e14f4f4def9/vectordrawable-animated-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/eddb50c6a973ac6104ae07d5e22a7acc/vectordrawable-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/c5232555184dfae2ececaa10d82a078d/drawerlayout-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/03564b824a7a614672c869983b24f123/viewpager-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/c85758e3da7986c71f4534a7e0fbaf07/customview-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/b3269336d9d1d74cc500d5c60fe44f64/loader-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/79d323d65b4148d7314b3a23028615be/jetified-activity-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/b5c7db304c70360ba83d96765ba825e8/core-1.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/d66cf0c13df9e7c4340b23f9ff3e395c/lifecycle-runtime-2.2.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/f060aef9ff2fe0f5e710b72fd4583e14/cursoradapter-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/e9781c0aafa8749c7915ee774274905a/versionedparcelable-1.1.0-api.jar:/home/jhon/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar:/home/jhon/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.2.0/cd3478503da69b1a7e0319bd2d1389943db9b364/lifecycle-common-java8-2.2.0.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/2b9894bf1aeb54407c4c3717f6e5beb4/jetified-savedstate-1.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/e5a66d828162fcba0fb35f2679f7c5a9/lifecycle-livedata-2.0.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/5de7f3cce06af1e5a068d2f0e6e6d051/lifecycle-livedata-core-2.0.0-api.jar:/home/jhon/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.2.0/4ef09a745007778eef83b92f8f23987a8ea59496/lifecycle-common-2.2.0.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/458f4ac6d516170aef5d99cd2dfc5d62/lifecycle-viewmodel-2.1.0-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/21a9e9b13e75030ad69ac8cf7995dc14/core-runtime-2.0.0-api.jar:/home/jhon/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/452d2ca5bc9f273cdded1f60aae9274a/interpolator-1.0.0-api.jar:/home/jhon/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/75d66ad52bbd0f68a4b0af8b6676f83d/jetified-kotlin-stdlib-1.3.61.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/8ec491d17e20864abbc99ad14550c1da/jetified-kotlin-stdlib-common-1.3.61.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/03ae7d340e5ef9a66495100c2b58b783/jetified-annotations-13.0.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/e5639e6e9bd0a581dbfed8c444d366bc/jetified-core-1.9.13-api.jar:/home/jhon/.gradle/caches/transforms-2/files-2.1/72c36dfddc70740f80d8087dac5b0d38/jetified-core-3.3.3.jar:/home/jhon/Android/Sdk/platforms/android-29/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="barcode_scan_release" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output url="file://$MODULE_DIR$/../../../../build/barcode_scan/intermediates/javac/release/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../../build/barcode_scan/intermediates/javac/releaseUnitTest/classes" />
+    <exclude-output />
+    <content url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android">
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/res" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/resources" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/assets" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/aidl" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/rs" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/release/shaders" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/res" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/resources" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/assets" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/aidl" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/java" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/rs" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/testRelease/shaders" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/res" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/assets" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/aidl" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/rs" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/main/shaders" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/res" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/resources" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/assets" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/aidl" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/java" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/rs" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/androidTest/shaders" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/res" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/assets" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/aidl" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/rs" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/Development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1/android/src/test/shaders" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/aidl_source_output_dir/release/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/aidl_source_output_dir/release/out" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/ap_generated_sources/release/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/ap_generated_sources/release/out" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/ap_generated_sources/releaseUnitTest/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/ap_generated_sources/releaseUnitTest/out" isTestSource="true" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/renderscript_source_output_dir/release/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/renderscript_source_output_dir/release/out" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/res/rs/release">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/res/rs/release" type="java-resource" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/source/buildConfig/release">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/source/buildConfig/release" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/source/proto/release/javalite">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/source/proto/release/javalite" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/source/proto/releaseUnitTest/javalite">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/barcode_scan/generated/source/proto/releaseUnitTest/javalite" isTestSource="true" generated="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-lite:3.0.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: io.flutter:flutter_embedding_release:1.0.0-9d5b21729ff53dbf8eadd8bc97e0e30d77abec95@jar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common-java8:2.2.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.2.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.61@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.zxing:core:3.3.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.material:material:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: me.dm7.barcodescanner:zxing:1.9.13@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.transition:transition:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat-resources:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.customview:customview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.activity:activity:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-runtime:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: me.dm7.barcodescanner:core:1.9.13@aar" level="project" />
+  </component>
+</module>

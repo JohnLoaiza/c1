@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/res/merged/debug/values-mr/values-mr.xml",
+            "map": [
+                {
+                    "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/res/values-mr/values-mr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml",
+            "map": [
+                {
+                    "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/res/values-mr/values-mr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/conectcarga/conectcarga/build/barcode_scan/intermediates/res/merged/release/xml/standalone_badge_gravity_top_start.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/880b7e418025ce421e62ae2f6f547833/material-1.1.0/res/xml/standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/conectcarga/conectcarga/build/barcode_scan/intermediates/res/merged/release/xml/standalone_badge_gravity_bottom_start.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/880b7e418025ce421e62ae2f6f547833/material-1.1.0/res/xml/standalone_badge_gravity_bottom_start.xml"
+    },
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/conectcarga/conectcarga/build/barcode_scan/intermediates/res/merged/release/xml/standalone_badge_gravity_bottom_end.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/880b7e418025ce421e62ae2f6f547833/material-1.1.0/res/xml/standalone_badge_gravity_bottom_end.xml"
+    },
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/conectcarga/conectcarga/build/barcode_scan/intermediates/res/merged/release/xml/standalone_badge.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/880b7e418025ce421e62ae2f6f547833/material-1.1.0/res/xml/standalone_badge.xml"
+    }
+]

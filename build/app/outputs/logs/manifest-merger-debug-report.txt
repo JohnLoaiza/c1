@@ -1,0 +1,330 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:google_maps_flutter] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_plugin_android_lifecycle] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:map_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/map_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_keyboard_visibility] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/flutter_keyboard_visibility/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:webview_flutter] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:path_provider] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_web] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:geolocator] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/geolocator/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a2eae90d56848e0db4aa95d3d33d21e5/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/58ac12e0bd92a8adc9e335ea9dd4e690/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0ebaba36cd21dfc07dc3d4e2a9166d4e/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/f7f95e557c119f539d36e53a85cc73e4/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9a942bea2bfe0495e7d729828084531/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9572217d9082abf934b4f9a900e8553/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/faad038208902fc1dff4f119acbbdf5f/jetified-zxing-1.9.13/AndroidManifest.xml:2:1-13:12
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e1c5901a380f5f3cdfdb270321f0d5b/jetified-core-1.9.13/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/bdbed2193ea08bca17364a10f31cdd1e/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/8f3e8a6ef0261ee44dd66807a85ce6ae/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/28818f216f7ec51c17a647911018d927/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5f3fd42a141e88a6ca645c2dd4bf1230/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4799379350348eb56d1aafc8097e2258/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/b4400a41cd9601e1de4cb993587783e1/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/36c7331c72ac1f35eafed580ad25991a/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/9ce9521570ee6a498123315abd5c50b2/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/65d56a6f10c8c761836ccbc5d03083d0/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/aab786fe7cb65f1513c0d12e4b3fec63/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/035e3221cdab253d605b1a1dd82d44ef/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c7ed0d495a4c9d6e392a9b31c40a3b1a/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/61aeb024fca92b075b1c93ccd96bf58a/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/3c9eff53f5ef830eb5ee97d8bea7bba4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/39f78cd2b512eb0ed829d0d594595b3e/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4af49732d5c39241939e051c2e13e9ae/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7fc2209e2ff996158dc691638c003737/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/71f9c1eff5f4b051dd44de2ae7dcf9ef/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a455904366afc008419a7860c28b6efd/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a513cae41169408a24c274115d19f246/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4220eb011a6b538989d82e0466740148/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5c236b921b95ccde36bfbbe3624eaf4e/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/be1898ec2b870b9e0147f26022422e9b/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0805c5ef6775e2076f7477421f1627be/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/57275144d77c8522565b0f6273065672/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7709b5912284bcd7a63bba8bc20a33a1/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/fe41baf038d319825e396c200fb2ab8a/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/945c699a79b145fff558fc688aa90348/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/fda268ac73e917f4b0cd9d8f531b33c6/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5d8c9b4df9081b8c877064ab865c2e52/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/53adf1c802db891a5f660cbc12407da8/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c78446286c307766dce2d177ec9be311/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e67da7af677d132c5c559947a9ed01c/print-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:2:5-37
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:9:22-78
+application
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:12:5-33:19
+MERGED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-11:19
+MERGED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-11:19
+MERGED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.material:material:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a2eae90d56848e0db4aa95d3d33d21e5/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a2eae90d56848e0db4aa95d3d33d21e5/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/f7f95e557c119f539d36e53a85cc73e4/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/f7f95e557c119f539d36e53a85cc73e4/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9a942bea2bfe0495e7d729828084531/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9a942bea2bfe0495e7d729828084531/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9572217d9082abf934b4f9a900e8553/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9572217d9082abf934b4f9a900e8553/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/faad038208902fc1dff4f119acbbdf5f/jetified-zxing-1.9.13/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/faad038208902fc1dff4f119acbbdf5f/jetified-zxing-1.9.13/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e1c5901a380f5f3cdfdb270321f0d5b/jetified-core-1.9.13/AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e1c5901a380f5f3cdfdb270321f0d5b/jetified-core-1.9.13/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7709b5912284bcd7a63bba8bc20a33a1/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7709b5912284bcd7a63bba8bc20a33a1/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:14:9-36
+	android:icon
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:15:9-39
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:13:9-57
+activity#net.citica.conectcarga.MainActivity
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:16:9-27:20
+	android:launchMode
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:18:13-43
+	android:hardwareAccelerated
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:21:13-47
+	android:windowSoftInputMode
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:22:13-55
+	android:configChanges
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:20:13-163
+	android:theme
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:19:13-47
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:17:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:23:13-26:29
+action#android.intent.action.MAIN
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:24:17-68
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:25:27-74
+meta-data#flutterEmbedding
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:30:9-32:33
+	android:value
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:32:13-30
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml:31:13-44
+uses-sdk
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+MERGED from [:google_maps_flutter] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:map_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/map_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:map_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/map_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_keyboard_visibility] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/flutter_keyboard_visibility/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_keyboard_visibility] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/flutter_keyboard_visibility/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/geolocator/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/geolocator/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a2eae90d56848e0db4aa95d3d33d21e5/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a2eae90d56848e0db4aa95d3d33d21e5/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/58ac12e0bd92a8adc9e335ea9dd4e690/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/58ac12e0bd92a8adc9e335ea9dd4e690/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0ebaba36cd21dfc07dc3d4e2a9166d4e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0ebaba36cd21dfc07dc3d4e2a9166d4e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/f7f95e557c119f539d36e53a85cc73e4/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/f7f95e557c119f539d36e53a85cc73e4/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9a942bea2bfe0495e7d729828084531/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9a942bea2bfe0495e7d729828084531/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9572217d9082abf934b4f9a900e8553/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c9572217d9082abf934b4f9a900e8553/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/faad038208902fc1dff4f119acbbdf5f/jetified-zxing-1.9.13/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:zxing:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/faad038208902fc1dff4f119acbbdf5f/jetified-zxing-1.9.13/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e1c5901a380f5f3cdfdb270321f0d5b/jetified-core-1.9.13/AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:core:1.9.13] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e1c5901a380f5f3cdfdb270321f0d5b/jetified-core-1.9.13/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/bdbed2193ea08bca17364a10f31cdd1e/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/bdbed2193ea08bca17364a10f31cdd1e/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/8f3e8a6ef0261ee44dd66807a85ce6ae/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/8f3e8a6ef0261ee44dd66807a85ce6ae/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/28818f216f7ec51c17a647911018d927/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/28818f216f7ec51c17a647911018d927/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5f3fd42a141e88a6ca645c2dd4bf1230/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5f3fd42a141e88a6ca645c2dd4bf1230/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4799379350348eb56d1aafc8097e2258/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4799379350348eb56d1aafc8097e2258/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/b4400a41cd9601e1de4cb993587783e1/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/b4400a41cd9601e1de4cb993587783e1/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/36c7331c72ac1f35eafed580ad25991a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/36c7331c72ac1f35eafed580ad25991a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/9ce9521570ee6a498123315abd5c50b2/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/9ce9521570ee6a498123315abd5c50b2/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/65d56a6f10c8c761836ccbc5d03083d0/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/65d56a6f10c8c761836ccbc5d03083d0/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/aab786fe7cb65f1513c0d12e4b3fec63/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/aab786fe7cb65f1513c0d12e4b3fec63/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/035e3221cdab253d605b1a1dd82d44ef/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/035e3221cdab253d605b1a1dd82d44ef/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c7ed0d495a4c9d6e392a9b31c40a3b1a/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c7ed0d495a4c9d6e392a9b31c40a3b1a/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/61aeb024fca92b075b1c93ccd96bf58a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/61aeb024fca92b075b1c93ccd96bf58a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/3c9eff53f5ef830eb5ee97d8bea7bba4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/3c9eff53f5ef830eb5ee97d8bea7bba4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/39f78cd2b512eb0ed829d0d594595b3e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/39f78cd2b512eb0ed829d0d594595b3e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4af49732d5c39241939e051c2e13e9ae/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4af49732d5c39241939e051c2e13e9ae/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7fc2209e2ff996158dc691638c003737/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7fc2209e2ff996158dc691638c003737/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/71f9c1eff5f4b051dd44de2ae7dcf9ef/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/71f9c1eff5f4b051dd44de2ae7dcf9ef/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a455904366afc008419a7860c28b6efd/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a455904366afc008419a7860c28b6efd/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a513cae41169408a24c274115d19f246/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/a513cae41169408a24c274115d19f246/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4220eb011a6b538989d82e0466740148/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/4220eb011a6b538989d82e0466740148/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5c236b921b95ccde36bfbbe3624eaf4e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5c236b921b95ccde36bfbbe3624eaf4e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/be1898ec2b870b9e0147f26022422e9b/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/be1898ec2b870b9e0147f26022422e9b/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0805c5ef6775e2076f7477421f1627be/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0805c5ef6775e2076f7477421f1627be/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/57275144d77c8522565b0f6273065672/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/57275144d77c8522565b0f6273065672/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7709b5912284bcd7a63bba8bc20a33a1/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7709b5912284bcd7a63bba8bc20a33a1/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/fe41baf038d319825e396c200fb2ab8a/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/fe41baf038d319825e396c200fb2ab8a/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/945c699a79b145fff558fc688aa90348/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/945c699a79b145fff558fc688aa90348/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/fda268ac73e917f4b0cd9d8f531b33c6/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/fda268ac73e917f4b0cd9d8f531b33c6/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5d8c9b4df9081b8c877064ab865c2e52/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/5d8c9b4df9081b8c877064ab865c2e52/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/53adf1c802db891a5f660cbc12407da8/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/53adf1c802db891a5f660cbc12407da8/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c78446286c307766dce2d177ec9be311/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/c78446286c307766dce2d177ec9be311/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e67da7af677d132c5c559947a9ed01c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/7e67da7af677d132c5c559947a9ed01c/print-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.CAMERA
+ADDED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-62
+activity#de.mintware.barcode_scan.BarcodeScannerActivity
+ADDED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-84
+	android:name
+		ADDED from [:barcode_scan] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/barcode_scan/intermediates/library_manifest/debug/AndroidManifest.xml:10:19-81
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/0c1fda2cefe7d0dd5f6e64bb727e2f3b/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/ec080af14dd44abdbee529985ab82358/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/jhon/.gradle/caches/transforms-2/files-2.1/96989bd8cc2831af4b88291376496401/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58

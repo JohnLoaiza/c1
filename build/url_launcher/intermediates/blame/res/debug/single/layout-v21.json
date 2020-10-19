@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/jhon/Escritorio/Flutter/Copia 2 conectcarga/conectcarga/conectcarga/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/jhon/.gradle/caches/transforms-2/files-2.1/ceb076eb75224d998da4bc704a32d472/core-1.1.0/res/layout-v21/notification_action.xml"
+    }
+]
