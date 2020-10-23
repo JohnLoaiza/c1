@@ -1,7 +1,7 @@
 import 'package:conectcarga/MyPreferences.dart';
 import 'package:conectcarga/vistas/my_trips2.dart';
-import 'package:conectcarga/vistas/my_tripsCliente.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 
 class PerfilCliente extends StatefulWidget {
@@ -22,23 +22,37 @@ class SettingsState extends State<PerfilCliente> {
 
     TextEditingController emailControler =
     TextEditingController(text: _myPreferences.email);
+
+    TextEditingController nameControler =
+    TextEditingController(text: _myPreferences.name);
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.blueGrey,
+          shadowColor: Colors.orange,
           title: Text("Perfil",
             textAlign: TextAlign.center,
           ),
         ),
         body: Padding(
-          padding: EdgeInsets.all(15),
+          padding: EdgeInsets.all(0),
           child: ListView(
             children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.account_circle, size: 140,)
-                ],
+              Container(
+                  color: Colors.green,
+                  height: 220,
+                  child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image.asset("assets/images/AvatarC.png", height: 140,),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(_myPreferences.name ?? "Name", style: TextStyle(color: Colors.white, fontSize: 25),),
+                        ],
+                      )
+                  )
               ),
-
               SizedBox(
                 height: 20,
               ),
@@ -54,7 +68,7 @@ class SettingsState extends State<PerfilCliente> {
                   Container(
                     width: 185,
                     child: TextField(
-                      style: TextStyle(color: Colors.blueAccent),
+                      style: TextStyle(color: Colors.green),
                       textAlign: TextAlign.center,
                       controller: emailControler,
                       onChanged: (value) {
@@ -76,7 +90,7 @@ class SettingsState extends State<PerfilCliente> {
                   Container(
                     width: 185,
                     child: TextField(
-                      style: TextStyle(color: Colors.blueAccent),
+                      style: TextStyle(color: Colors.green),
                       textAlign: TextAlign.center,
                       controller: numberControler,
                       onChanged: (value) {
@@ -91,11 +105,12 @@ class SettingsState extends State<PerfilCliente> {
                 height: 20,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
                     child: Text("Contraseña:", style: TextStyle(fontSize: 25,)),
                   ),
-                  Text(_myPreferences.password, style: TextStyle(fontSize: 25, color: Colors.blueAccent,),)
+                  Text(_myPreferences.password, textAlign: TextAlign.center, style: TextStyle(fontSize: 25, color: Colors.green,),)
 
                 ],
               ),
@@ -103,15 +118,16 @@ class SettingsState extends State<PerfilCliente> {
                 height: 50,
               ),
               Container(
+                  margin: EdgeInsets.all(20),
                   height: 50,
                   width: 120,
                   child:   RaisedButton(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)),
-                    color: Colors.blueAccent,
+                    color: Colors.green,
                     onPressed: (){
                       Navigator.of(context, rootNavigator: true).pop('dialog');
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => OrdenesList()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => UserList()));
                     },
                     child: Padding(
                       padding: EdgeInsets.only(top: 4),

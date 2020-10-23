@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:conectcarga/data/shared_preferences_helper.dart';
+import 'package:conectcarga/new.dart';
 import 'package:conectcarga/tools/CustomTextStyle.dart';
 import 'package:conectcarga/tools/app_data.dart';
 import 'package:conectcarga/tools/app_tools.dart';
@@ -10,6 +11,7 @@ import 'package:conectcarga/tools/rate_my_app.dart';
 import 'package:conectcarga/vistas/perfilConductor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -17,6 +19,8 @@ import 'package:webview_flutter/webview_flutter.dart';
 import 'package:map_launcher/map_launcher.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../MyPreferences.dart';
+import '../homechat.dart';
 import 'aboutUs.dart';
 import 'delivery.dart';
 import 'history.dart';
@@ -36,6 +40,18 @@ class UserList extends StatefulWidget {
 }
 
 class _UserListState extends State<UserList> {
+  MyPreferences _myPreferences = MyPreferences();
+  int fecha;
+  String _locationlat = "";
+  String _locationlgn = "";
+  final scaffoldKey = new GlobalKey<ScaffoldState>();
+  Position _position;
+  StreamSubscription <Position> _positionStream;
+
+
+
+
+
   final String apiUrl = "https://pd.domicompras.com/servicios2";
   int selectedTab = 0;
   BuildContext contexte;
@@ -100,19 +116,6 @@ class _UserListState extends State<UserList> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Container(
-                    width: 25,
-                    height: 25,
-                    margin: EdgeInsets.only(top: 8, left: 1),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
-                        image: DecorationImage(image: AssetImage("assets/images/iconoDesktop.png")),
-                        borderRadius: BorderRadius.circular(6),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey, offset: Offset(0, 1), blurRadius: 10)
-                        ]),
-                  ),
                   SizedBox(
                     width: 10,
                   ),
@@ -122,7 +125,7 @@ class _UserListState extends State<UserList> {
                       decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.shade300,
+                              color: Colors.blueAccent,
                               offset: Offset(4,0),
                               blurRadius: 10,
                             )
@@ -136,12 +139,13 @@ class _UserListState extends State<UserList> {
                           // log("tapdwndet ..$tapdowndet");
 
 
-                          _showAlertDialog("Aceptar servicio",_users[index]['FirstName'].toString(),context,_users[index]['OrderNumber'].toString(),
+                          _showAlertDialog("Aceptar servicio",_users[index]['FirstName'].toString(),context,_users[index]['OrderId'].toString(),
                               _users[index]['OrderTotal'].toString(),_users[index]['Address1'].toString(),_users[index]['Address2'].toString(),_users[index]['Peso'].toString(),_users[index]['metros'].toString());
 
                           // print("onTap called.");
                         },
                         child: Card(
+
                           elevation: 2,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)),
@@ -312,13 +316,37 @@ class _UserListState extends State<UserList> {
 
   @override
   void initState() {
+    int currentTimeInSeconds () {
+      var ms = (new DateTime.now ()). millisecondsSinceEpoch;
+      return (ms / 1000) .round ();
+    }
+
+
     super.initState();
     fetchUsers();
+    _positionStream = getPositionStream(distanceFilter: 10, desiredAccuracy: LocationAccuracy.high, timeInterval: 30,).listen((Position position) {
+      setState(() {
+        print(position);
+        _position = position;
+        setState(() {
+          _locationlat = "${_position?.latitude ?? '-'}";
+          _locationlgn = "${_position?.longitude ?? '-'}";
+          _myPreferences.location1 = "${_position?.latitude ?? '-'}";
+          _myPreferences.location2 = "${_position?.longitude ?? '-'}";
+          _myPreferences.fecha = "${currentTimeInSeconds()}";
+         // _myPreferences.id = "${widget.id}";
+        });
+      });
+    });
+
   }
+
+
 
   
 
   void _showAlertDialog(var titulo,var contenido,var contexto,var id,var valor,var origen,var destino,var peso,var volumen) async {
+
     await   showDialog(
         context: contexto,
         builder: (context) {
@@ -342,6 +370,9 @@ class _UserListState extends State<UserList> {
                 onPressed: (){
                   Navigator.of(context, rootNavigator: true).pop('dialog');
                   EnviarAcepta(id);
+                  verifyDetails(id);
+                  Navigator.of(context, rootNavigator: true).pop('dialog');
+
                 },
               ),
 
@@ -358,6 +389,54 @@ class _UserListState extends State<UserList> {
         }
     );
   }
+
+  verifyDetails(var id) async {
+     int currentTimeInSeconds () {
+      var ms = (new DateTime.now ()). millisecondsSinceEpoch;
+      return (ms / 1000) .round ();
+    }
+
+    _positionStream = getPositionStream(distanceFilter: 10, desiredAccuracy: LocationAccuracy.high, timeInterval: 30,).listen((Position position) {
+      setState(() {
+        print(position);
+        _position = position;
+        setState(() {
+          _locationlat = "${_position?.latitude ?? '-'}";
+          _locationlgn = "${_position?.longitude ?? '-'}";
+          _myPreferences.location1 = "${_position?.latitude ?? '-'}";
+          _myPreferences.location2 = "${_position?.longitude ?? '-'}";
+          _myPreferences.fecha = "${currentTimeInSeconds()}";
+          _myPreferences.id = id;
+        });
+      });
+    });
+    displayProgressDialog(context);
+    var location=_locationlat.toString();
+    var location2=_locationlgn.toString();
+
+
+
+    final response = await http.post("https://pd.domicompras.com/latlng",
+        body:{"fecha":"${currentTimeInSeconds()}","lat":"$location","lng":"$location2","orden":"$id"});
+    log("response login:  ");
+    log(response.body);
+    var jsonRespon=json.decode(response.body);
+
+    if (jsonRespon['ID']>0) {
+      closeProgressDialog(context);
+      Navigator.of(context).push(new CupertinoPageRoute(
+          builder: (BuildContext context) =>  new UserList()));
+
+    } else {
+      closeProgressDialog(context);
+      showSnackBar(response.body, scaffoldKey);
+    }
+
+
+  }
+
+
+
 
 
   void _showAlertDialog2(var mensaje, var titulo,var contexto) async {
@@ -498,8 +577,17 @@ class _UserListState extends State<UserList> {
     //  debugPrint(timer.tick.toString());
     //});
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orange,
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => New()));
+        },
+        child: Icon(Icons.fiber_new, color: Colors.white, size: 40,),
+      ),
       appBar: AppBar(
         title: Text('Oferta de servicios'),
+        centerTitle: true,
       ),
       body: Container(
         child: _buildList(),
@@ -529,6 +617,20 @@ class _UserListState extends State<UserList> {
 
             new SizedBox(
               height: 50.0,
+            ),
+            new ListTile(
+              leading: new CircleAvatar(
+                child: new Icon(
+                  Icons.chat_bubble,
+                  color: Colors.white,
+                  size: 20.0,
+                ),
+              ),
+              title: new Text("Chat"),
+              onTap: () {
+                Navigator.of(context).push(new CupertinoPageRoute(
+                    builder: (BuildContext context) => new HomePageChat()));
+              },
             ),
             new ListTile(
               leading: new CircleAvatar(
@@ -660,6 +762,7 @@ class _UserListState extends State<UserList> {
 
   @override
   void dispose() {
+    _positionStream.cancel();
 
 
     time.cancel();

@@ -59,6 +59,10 @@ class _SignUpState extends State<SignUp> {
               child:  TextFormField(
                 textAlign: TextAlign.center,
                 controller: fullname,
+                onChanged: (value) {
+                  _myPreferences.name = value;
+                  _myPreferences.commit();
+                },
                 decoration: InputDecoration(
                   labelText: 'Nombre completo',
                   labelStyle: TextStyle(),

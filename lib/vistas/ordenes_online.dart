@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:conectcarga/MyPreferences.dart';
 import 'dart:developer';
 import 'package:conectcarga/position.dart';
 import 'package:geolocator/geolocator.dart';
@@ -111,19 +112,6 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Container(
-                    width: 25,
-                    height: 25,
-                    margin: EdgeInsets.only(top: 8, left: 1),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
-                        image: DecorationImage(image: AssetImage("assets/images/iconoDesktop.png")),
-                        borderRadius: BorderRadius.circular(6),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey, offset: Offset(0, 1), blurRadius: 10)
-                        ]),
-                  ),
                   SizedBox(
                     width: 10,
                   ),
@@ -133,7 +121,7 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                       decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.shade300,
+                              color: Colors.blueAccent,
                               offset: Offset(4,0),
                               blurRadius: 10,
                             )
@@ -421,16 +409,16 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                   _launchURL(id);
                 },
               ),
-              RaisedButton(
-                color: Colors.blue,
-                child: Text("Compartir posicion", style: TextStyle(color: Colors.white),),
-                onPressed: (){
-                  Navigator.of(context, rootNavigator: true).pop('dialog');
+          //    RaisedButton(
+          //      color: Colors.blue,
+           //     child: Text("Compartir posicion", style: TextStyle(color: Colors.white),),
+            //    onPressed: (){
+             //     Navigator.of(context, rootNavigator: true).pop('dialog');
 
-                  _getCurrentLocation();
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => PositionGps(id)));
-                },
-              ),
+            //      _getCurrentLocation();
+             //     Navigator.push(context, MaterialPageRoute(builder: (context) => PositionGps(id)));
+            //    },
+             // ),
             ],
           );
         }
@@ -1057,6 +1045,7 @@ class PositionGps extends StatefulWidget {
 }
 
 class _HomeState extends State<PositionGps> {
+  MyPreferences _myPreferences = MyPreferences();
   int fecha;
   String _locationlat = "";
   String _locationlgn = "";
@@ -1085,7 +1074,10 @@ class _HomeState extends State<PositionGps> {
         setState(() {
           _locationlat = "${_position?.latitude ?? '-'}";
           _locationlgn = "${_position?.longitude ?? '-'}";
-
+          _myPreferences.location1 = "${_position?.latitude ?? '-'}";
+          _myPreferences.location2 = "${_position?.longitude ?? '-'}";
+          _myPreferences.fecha = "${currentTimeInSeconds()}";
+          _myPreferences.id = "${widget.id}";
         });
       });
     });

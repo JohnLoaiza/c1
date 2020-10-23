@@ -1,6 +1,7 @@
 import 'package:conectcarga/MyPreferences.dart';
 import 'package:conectcarga/vistas/my_trips2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 
 class SettingsPage extends StatefulWidget {
@@ -21,6 +22,9 @@ class SettingsState extends State<SettingsPage> {
 
     TextEditingController emailControler =
     TextEditingController(text: _myPreferences.email);
+
+    TextEditingController nameControler =
+    TextEditingController(text: _myPreferences.name);
     return Scaffold(
         appBar: AppBar(
           title: Text("Perfil",
@@ -28,16 +32,25 @@ class SettingsState extends State<SettingsPage> {
           ),
         ),
         body: Padding(
-          padding: EdgeInsets.all(15),
+          padding: EdgeInsets.all(0),
           child: ListView(
             children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.account_circle, size: 140,)
-                ],
-              ),
-
+              Container(
+                    color: Colors.blueAccent,
+                    height: 220,
+                      child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image.asset("assets/images/avatar.png", height: 140,),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(_myPreferences.name ?? "Name", style: TextStyle(color: Colors.white, fontSize: 25),),
+                        ],
+                      )
+                  )
+                  ),
               SizedBox(
                 height: 20,
               ),
@@ -90,11 +103,12 @@ class SettingsState extends State<SettingsPage> {
                 height: 20,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
                     child: Text("Contraseña:", style: TextStyle(fontSize: 25,)),
                   ),
-                  Text(_myPreferences.password, style: TextStyle(fontSize: 25, color: Colors.blueAccent,),)
+                  Text(_myPreferences.password, textAlign: TextAlign.center, style: TextStyle(fontSize: 25, color: Colors.blueAccent,),)
 
                 ],
               ),
@@ -102,6 +116,7 @@ class SettingsState extends State<SettingsPage> {
                 height: 50,
               ),
               Container(
+                margin: EdgeInsets.all(20),
                   height: 50,
                   width: 120,
                   child:   RaisedButton(

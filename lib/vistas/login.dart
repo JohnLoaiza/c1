@@ -33,10 +33,10 @@ class _GirliesLoginState extends State<GirliesLogin> {
     this.context = context;
     return new Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFFFFFFFF) ,
+      backgroundColor: Colors.blue ,
       appBar: new AppBar(
         title: new Text("Login"),
-        centerTitle: false,
+        centerTitle: true,
         elevation: 0.0,
       ),
       body: new SingleChildScrollView(
@@ -46,12 +46,17 @@ class _GirliesLoginState extends State<GirliesLogin> {
               height: 30.0,
             ),
             _appIcon(),
+            SizedBox(
+              height: 40,
+            ),
             Container(
+
               height: 40,
               margin: EdgeInsets.only(right: 30, left: 30),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(width: 2, color: Colors.grey)
+                  border: Border.all(width: 2, color: Colors.grey),
+                color: Colors.white,
               ),
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
@@ -74,6 +79,7 @@ class _GirliesLoginState extends State<GirliesLogin> {
               height: 40,
               margin: EdgeInsets.only(right: 30, left: 30),
               decoration: BoxDecoration(
+                color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(width: 2, color: Colors.grey)
               ),
@@ -92,11 +98,29 @@ class _GirliesLoginState extends State<GirliesLogin> {
                 ),
               ),
             ),
-            appButton(
-                btnTxt: "Ingresar",
-                onBtnclicked: verifyLoggin,
-                btnPadding: 20.0,
-                btnColor: Color(0xFFFFFFFF)),
+            SizedBox(
+              height: 30,
+            ),
+            Container(
+              height: 50,
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20)
+              ),
+              child: RaisedButton(
+                child: Text("Ingresar", style: TextStyle(color: Colors.white, fontSize: 20),),
+                shape: new RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(7),
+                ),
+              onPressed: verifyLoggin,
+              color: Colors.lightBlueAccent,
+
+            ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+
             new GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -104,7 +128,7 @@ class _GirliesLoginState extends State<GirliesLogin> {
               },
               child: new Text(
                 "No se ha registrado? Hagalo aquí",
-                style: new TextStyle(color:Color(0xFFf39200)),
+                style: new TextStyle(color: Colors.white),
               ),
             )
           ],
@@ -117,7 +141,12 @@ class _GirliesLoginState extends State<GirliesLogin> {
 
   Widget _appIcon() {
     return new Container(
-      decoration: new BoxDecoration(color: Colors.transparent),
+      width: 200,
+      height: 100,
+      decoration: new BoxDecoration(color: Colors.white,
+      borderRadius: BorderRadius.circular(10),
+
+      ),
       child: new Image(
         image: new AssetImage("assets/images/conectcarga.png"),
         height: 170.0,

@@ -16,6 +16,7 @@ import 'dart:convert';
 import 'package:map_launcher/map_launcher.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 
+import '../new.dart';
 import 'aboutUs.dart';
 import 'delivery.dart';
 import 'generate.dart';
@@ -104,19 +105,6 @@ class _OrdenesListState extends State<OrdenesList> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Container(
-                    width: 25,
-                    height: 25,
-                    margin: EdgeInsets.only(top: 8, left: 1),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
-                        image: DecorationImage(image: AssetImage("assets/images/iconoDesktop.png")),
-                        borderRadius: BorderRadius.circular(6),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey, offset: Offset(0, 1), blurRadius: 10)
-                        ]),
-                  ),
                   SizedBox(
                     width: 10,
                   ),
@@ -126,7 +114,7 @@ class _OrdenesListState extends State<OrdenesList> {
                       decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.shade300,
+                              color: Colors.green,
                               offset: Offset(4,0),
                               blurRadius: 10,
                             )
@@ -330,14 +318,14 @@ class _OrdenesListState extends State<OrdenesList> {
               RaisedButton(
                 child: Text("Cerrar", style: TextStyle(color: Colors.white),),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => RateService()));
+                  Navigator.of(context, rootNavigator: true).pop('dialog');
                 },
               ),
               RaisedButton(
                 child: Text("Generar QR", style: TextStyle(color: Colors.white),),color: Color(0xFF2daae1),
                 onPressed: (){
                   // Navigator.of(context, rootNavigator: true).pop('dialog');
-
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RateService()));
                   Navigator.push(context, MaterialPageRoute(builder: (context) => GenerateScreen(objstr:id)));
                 },
               )
@@ -372,9 +360,18 @@ class _OrdenesListState extends State<OrdenesList> {
     //  debugPrint(timer.tick.toString());
     //});
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orange,
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => New()));
+        },
+        child: Icon(Icons.fiber_new, color: Colors.white, size: 40,),
+      ),
 
       appBar: AppBar(
         title: Text('Ordenes de Carga'),
+        centerTitle: true,
         backgroundColor: Colors.green,
       ),
       body: Container(
@@ -389,10 +386,11 @@ class _OrdenesListState extends State<OrdenesList> {
             new Container(
               decoration: new BoxDecoration(color: Colors.transparent),
               child: new Image(
-                image: new AssetImage("assets/images/avatar.png"),
-                height: 80.0,
-                width: 80.0,
+                image: new AssetImage("assets/images/AvatarC.png",),
+                height: 120.0,
+                width: 120.0,
               ),
+              margin: EdgeInsets.only(top: 50.0),
 
 
 
