@@ -5,6 +5,8 @@ import 'package:conectcarga/position.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 import 'package:conectcarga/model/carservices.dart';
+import '../homechat.dart';
+import '../homechatCliente.dart';
 import 'my_trips2.dart';
 import 'package:conectcarga/data/shared_preferences_helper.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -144,6 +146,10 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)),
                           child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.orangeAccent, width: 1),
+                              borderRadius: BorderRadius.circular(8)
+                            ),
                             padding: EdgeInsets.all(4),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -192,7 +198,7 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                                           _Peso(_users[index]),
                                           // '${_users[index].carCustomer}',
                                           style: CustomTextStyle.mediumTextStyle.copyWith(
-                                              color: Colors.black54, fontSize: 11),
+                                              color: Colors.black54, fontSize: 13),
                                         ),
                                       ),
                                       Container(
@@ -201,7 +207,7 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                                           _Metros(_users[index]),
                                           // '${_users[index].carCustomer}',
                                           style: CustomTextStyle.mediumTextStyle.copyWith(
-                                              color: Colors.black54, fontSize: 11),
+                                              color: Colors.black54, fontSize: 13),
                                         ),
                                       )
                                     ]
@@ -254,9 +260,9 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                 child: SizedBox(
                   width: 200.0,
                   // height: 30.0,
-                  child: AutoSizeText(
+                  child: Text(
                     "$prefi : $address",
-                    maxLines: 2,
+                    maxLines: 2, style: TextStyle(fontSize: 16.5),
 
                   ),
                 ),
@@ -409,6 +415,15 @@ class _OrdenesOnlineState extends State<OrdenesOnline> {
                   _launchURL(id);
                 },
               ),
+              RaisedButton.icon(
+                icon: Icon(Icons.chat, color: Colors.white,),
+                label: Text("Chat", style: TextStyle(color: Colors.white),),color: Color(0xFF2daae1),
+                onPressed: (){
+                  // Navigator.of(context, rootNavigator: true).pop('dialog');
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomePageChat(id)));
+
+                },
+              )
           //    RaisedButton(
           //      color: Colors.blue,
            //     child: Text("Compartir posicion", style: TextStyle(color: Colors.white),),

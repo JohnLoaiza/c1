@@ -19,19 +19,6 @@ class ChatMessage extends StatelessWidget {
     return  (emisor.toLowerCase())==(myName.toLowerCase())?
     new Container(
       margin: const EdgeInsets.symmetric(vertical: 10.0),
-      child:new Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-
-          getAvatarChat(30.0, 30.0),
-          getTextChat(60.0, MediaQuery.of(context).size.width*0.7,text,fechaHora)
-
-        ],
-      ),
-    )
-        :
-    new Container(
-      margin: const EdgeInsets.symmetric(vertical: 10.0),
       padding: EdgeInsets.only(left: 40),
       child:new Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,6 +28,19 @@ class ChatMessage extends StatelessWidget {
 
           getTextChatR(60.0, MediaQuery.of(context).size.width*0.7,text,fechaHora),
           getAvatarChatR(35.0, 35.0)
+
+        ],
+      ),
+    )
+    :
+    new Container(
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      child:new Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+
+          getAvatarChat(30.0, 30.0),
+          getTextChat(60.0, MediaQuery.of(context).size.width*0.7,text,fechaHora)
 
         ],
       ),
@@ -141,7 +141,7 @@ class ChatMessage extends StatelessWidget {
       //height: height,
       width: width,
       child: Material(
-        color: Colors.blue[100],
+        color: Colors.red[100],
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(height / 3),
           bottomRight: Radius.circular(height / 3),

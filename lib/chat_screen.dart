@@ -12,6 +12,9 @@ import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:http/http.dart' as http;
 
 class ChatScreen extends StatefulWidget {
+  ChatScreen(this.id);
+  String id;
+
   @override
   State createState() => new ChatScreenState();
 }
@@ -20,6 +23,7 @@ class ChatScreenState extends State<ChatScreen> {
   final TextEditingController _textController = new TextEditingController();
   List<ChatMessage> _messages = <ChatMessage>[];
   SharedPreferencesHelper helpe = new SharedPreferencesHelper();
+  final String apiUrl = "https://pd.domicompras.com/servicios2";
   var time;
   var conta=0;
   var lastID=0;
@@ -27,6 +31,17 @@ class ChatScreenState extends State<ChatScreen> {
   var myImagePath;
   var MyTurno="0";
   String _selectedCity;
+  List<dynamic> _users = [];
+
+  void fetchUsers() async {
+    var result = await http.get(apiUrl);
+    setState(() {
+      _users = json.decode(result.body);
+      GetChatList();
+
+    });
+  }
+
 
   void _handleSubmitted(String text) {
     if(text.trim()==""){
@@ -42,7 +57,7 @@ class ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     GetChatList();
-    time = startTimeout(10000);
+    time = startTimeout(100);
     super.initState();
   }
 
@@ -140,6 +155,7 @@ class ChatScreenState extends State<ChatScreen> {
 
 
   void GetChatList() async {
+    String us = "88";
 
     helpe = new SharedPreferencesHelper();
     myUsID = await helpe.myUserID();
@@ -155,7 +171,7 @@ class ChatScreenState extends State<ChatScreen> {
 
     }
 
-    String URLchat=URL_Server+"Mensajeria/chat_cord.jsp?action=update&nick=$myUsID&movile=$myUsID&isMovil=ok";
+    String URLchat=URL_Server+"Mensajeria/chat_cord.jsp?action=update&nick=${widget.id}&movile=${widget.id}&isMovil=ok";
     // log("URLchat $URLchat");
     final response = await http.post(URLchat,body:
     {"user":"$myUsID","tag":"turno"});
@@ -223,13 +239,15 @@ class ChatScreenState extends State<ChatScreen> {
 
     helpe = new SharedPreferencesHelper();
     String MyUserIDs = await helpe.myUserID();
+    print("ID: $MyUserIDs");
+    String us = "88";
 
 
-    String URLchat=URL_Server+"Mensajeria/chat_cord.jsp?action=insert&nick=$MyUserIDs&movile=$MyUserIDs&message=$texto&isMovil=ok";
+    String URLchat=URL_Server+"Mensajeria/chat_cord.jsp?action=insert&nick=$MyUserIDs&movile=${widget.id}&message=$texto&isMovil=ok";
     // log("URLchat $URLchat");
 
     final response = await http.post(URLchat,body:
-    {"user":"$MyUserIDs","tag":"turno"});
+    {"user":"$us","tag":"turno"});
     //log("response GetChatList:  ");
     log(response.body.trim());
 

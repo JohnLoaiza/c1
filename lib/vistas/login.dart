@@ -49,6 +49,10 @@ class _GirliesLoginState extends State<GirliesLogin> {
             SizedBox(
               height: 40,
             ),
+            Text("Usuario:", style: TextStyle(color: Colors.white, fontSize: 17),),
+            SizedBox(
+              height: 10,
+            ),
             Container(
 
               height: 40,
@@ -61,19 +65,25 @@ class _GirliesLoginState extends State<GirliesLogin> {
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
                 textAlign: TextAlign.center,
+
                 controller: email,
                 onChanged: (value) {
                   _myPreferences.email = value;
                   _myPreferences.commit();
                 },
                 decoration: InputDecoration(
-                  labelText: 'Usuario',
-                  labelStyle: TextStyle(),
-                ),
+                 // labelText: 'Usuario',
+                 // labelStyle: TextStyle(fontSize: 10, ),
+
+                               ),
               ),
             ),
             new SizedBox(
               height: 30.0,
+            ),
+            Text("Contraseña:", style: TextStyle(color: Colors.white, fontSize: 17),),
+            SizedBox(
+              height: 10,
             ),
             Container(
               height: 40,
@@ -93,8 +103,8 @@ class _GirliesLoginState extends State<GirliesLogin> {
                   _myPreferences.commit();
                 },
                 decoration: InputDecoration(
-                  labelText: 'Contraseña',
-                  labelStyle: TextStyle(),
+                 // labelText: 'Contraseña',
+                 // labelStyle: TextStyle(),
                 ),
               ),
             ),

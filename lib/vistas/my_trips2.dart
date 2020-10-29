@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:developer';
+import 'package:conectcarga/chat_screen.dart';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:conectcarga/data/shared_preferences_helper.dart';
@@ -20,6 +21,7 @@ import 'package:map_launcher/map_launcher.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../MyPreferences.dart';
+import '../chat_screen.dart';
 import '../homechat.dart';
 import 'aboutUs.dart';
 import 'delivery.dart';
@@ -67,6 +69,7 @@ class _UserListState extends State<UserList> {
     setState(() {
       _users = json.decode(result.body);
       _buildList();
+
     });
   }
 
@@ -140,7 +143,7 @@ class _UserListState extends State<UserList> {
 
 
                           _showAlertDialog("Aceptar servicio",_users[index]['FirstName'].toString(),context,_users[index]['OrderId'].toString(),
-                              _users[index]['OrderTotal'].toString(),_users[index]['Address1'].toString(),_users[index]['Address2'].toString(),_users[index]['Peso'].toString(),_users[index]['metros'].toString());
+                              _users[index]['OrderTotal'].toString(),_users[index]['Address1'].toString(),_users[index]['Address2'].toString(),_users[index]['Peso'].toString(),_users[index]['metros'].toString(), _users[index]['LngDestino'].toString(), _users[index]['LatDestino'].toString ());
 
                           // print("onTap called.");
                         },
@@ -150,6 +153,10 @@ class _UserListState extends State<UserList> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)),
                           child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueAccent, width: 1),
+                              borderRadius: BorderRadius.circular(8)
+                            ),
                             padding: EdgeInsets.all(4),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -162,7 +169,7 @@ class _UserListState extends State<UserList> {
                                         _TimeRequest(_users[index]),
                                        // '${_users[index].carCustomer}',
                                         style: CustomTextStyle.mediumTextStyle.copyWith(
-                                            color: Colors.black, fontSize: 13),
+                                            color: Colors.black, fontSize: 15),
                                       ),
                                     ),
                                     Container(
@@ -198,7 +205,7 @@ class _UserListState extends State<UserList> {
                               _Peso(_users[index]),
                               // '${_users[index].carCustomer}',
                               style: CustomTextStyle.mediumTextStyle.copyWith(
-                                  color: Colors.black54, fontSize: 11),
+                                  color: Colors.black54, fontSize: 13),
                             ),
                           ),
                           Container(
@@ -207,7 +214,7 @@ class _UserListState extends State<UserList> {
                               _Metros(_users[index]),
                               // '${_users[index].carCustomer}',
                               style: CustomTextStyle.mediumTextStyle.copyWith(
-                                  color: Colors.black54, fontSize: 11),
+                                  color: Colors.black54, fontSize: 13),
                             ),
                           )
                           ]
@@ -286,9 +293,9 @@ class _UserListState extends State<UserList> {
                 child: SizedBox(
                   width: 200.0,
                  // height: 30.0,
-                  child: AutoSizeText(
+                  child:Text(
                     "$prefi : $address",
-                    maxLines: 2,
+                    maxLines: 2, style: TextStyle(fontSize: 16.5),
 
                   ),
                 ),
@@ -345,8 +352,9 @@ class _UserListState extends State<UserList> {
 
   
 
-  void _showAlertDialog(var titulo,var contenido,var contexto,var id,var valor,var origen,var destino,var peso,var volumen) async {
-
+  void _showAlertDialog(var titulo,var contenido,var contexto,var id,var valor,var origen,var destino,var peso,var volumen, dynamic lng, dynamic lat) async {
+    var longitud = double.parse('$lng');
+    var latitud =double.parse('$lat');
     await   showDialog(
         context: contexto,
         builder: (context) {
@@ -355,15 +363,8 @@ class _UserListState extends State<UserList> {
                 borderRadius: BorderRadius.all(Radius.circular(32.0))),
             contentPadding: EdgeInsets.only(top: 10.0,left: 20),
             title: Text(""+titulo),
-            content: Text(""+contenido+"\nOrden: "+id+"\nValor: "+valor+"\nOrigen: "+origen+"\nDestino: "+destino+"\nPeso: "+peso+"\nVolumen: "+volumen),
+            content: Text(""+contenido+"\nOrden: "+id+"\nValor: "+valor+"\nOrigen: "+origen+"\nDestino: "+destino+"\nPeso: "+peso+" Kg"+"\nVolumen: "+volumen+" Mt3", style: TextStyle(),),
             actions: <Widget>[
-              RaisedButton(
-                color: Colors.blue,
-                child: Text("CERRAR", style: TextStyle(color: Colors.white),),
-                onPressed: (){ Navigator.of(context, rootNavigator: true).pop('dialog');
-
-                 },
-              ),
               RaisedButton(
                 color: Colors.blue,
                 child: Text("ACEPTAR", style: TextStyle(color: Colors.white),),
@@ -378,12 +379,36 @@ class _UserListState extends State<UserList> {
 
               RaisedButton(
                 color: Colors.blue,
+                child: Text("CERRAR", style: TextStyle(color: Colors.white),),
+                onPressed: (){ Navigator.of(context, rootNavigator: true).pop('dialog');
+
+                 },
+              ),
+
+              RaisedButton(
+                color: Colors.blue,
                 child: Text("Mostrar ", style: TextStyle(color: Colors.white),),
                 onPressed: (){
                   //openMapsSheet("https://waze.com/ul?q="+Uri.encodeComponent(origen));
-                  openMapsSheetS(contexto);
+                  openMapsSheetS(contexto, longitud, latitud);
+                  print("Coordenadas: ${latitud}, ${longitud}");
                 },
-              )
+              ),
+
+              RaisedButton.icon(
+                color: Colors.blue,
+                icon: Icon(Icons.chat_bubble),
+                label: Text("CHAT", style: TextStyle(color: Colors.white),),
+                onPressed: (){
+
+
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomePageChat(id)));
+
+
+                },
+              ),
+
+
             ],
           );
         }
@@ -454,12 +479,6 @@ class _UserListState extends State<UserList> {
                 child: Text("CERRAR", style: TextStyle(color: Colors.white),),
                 onPressed: (){ Navigator.of(context, rootNavigator: true).pop('dialog'); },
               ),
-              RaisedButton(
-                child: Text("Mostrar Ruta", style: TextStyle(color: Colors.white),),
-                onPressed: (){
-                  openMapsSheetS(contexto);
-                },
-              )
             ],
           );
         }
@@ -478,11 +497,13 @@ class _UserListState extends State<UserList> {
     }
   }
 
-  openMapsSheetS(context) async {
+  openMapsSheetS(context, double longitud, double latitud) async {
+    print(" Coordenadas: ${Coords(latitud, longitud)}");
+
     try {
       final title = "Central Medellin";
       final description = "";
-      final coords = Coords(6.215950, -75.574773);
+      final coords = Coords(latitud, longitud);
       final availableMaps = await MapLauncher.installedMaps;
 
       showModalBottomSheet(
@@ -570,6 +591,7 @@ class _UserListState extends State<UserList> {
   }
   @override
   Widget build(BuildContext context) {
+    int index;
     time = startTimeout(5000);
     //time = new Future.delayed(const Duration(milliseconds: 5000), handleTimeout);
     //sub = time.asStream().listen((_) => print('Timer Update Ofertas'));
@@ -617,20 +639,6 @@ class _UserListState extends State<UserList> {
 
             new SizedBox(
               height: 50.0,
-            ),
-            new ListTile(
-              leading: new CircleAvatar(
-                child: new Icon(
-                  Icons.chat_bubble,
-                  color: Colors.white,
-                  size: 20.0,
-                ),
-              ),
-              title: new Text("Chat"),
-              onTap: () {
-                Navigator.of(context).push(new CupertinoPageRoute(
-                    builder: (BuildContext context) => new HomePageChat()));
-              },
             ),
             new ListTile(
               leading: new CircleAvatar(

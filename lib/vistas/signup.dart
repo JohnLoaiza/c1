@@ -57,14 +57,14 @@ class _SignUpState extends State<SignUp> {
               ),
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.right,
                 controller: fullname,
                 onChanged: (value) {
                   _myPreferences.name = value;
                   _myPreferences.commit();
                 },
                 decoration: InputDecoration(
-                  labelText: 'Nombre completo',
+                  labelText: 'Nombre',
                   labelStyle: TextStyle(),
 
                 ),
@@ -82,7 +82,7 @@ class _SignUpState extends State<SignUp> {
               ),
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.right,
                 controller: phoneNumber,
                 onChanged: (value) {
                   _myPreferences.number = value;
@@ -107,7 +107,7 @@ class _SignUpState extends State<SignUp> {
               ),
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.right,
                 controller: email,
                 onChanged: (value) {
                   _myPreferences.email = value;
@@ -132,7 +132,7 @@ class _SignUpState extends State<SignUp> {
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
                 obscureText: true,
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.right,
                 controller: password,
                 onChanged: (value) {
                   _myPreferences.password = value;
@@ -157,7 +157,7 @@ class _SignUpState extends State<SignUp> {
               padding: EdgeInsets.only(right: 10, left: 10),
               child:  TextFormField(
                 obscureText: true,
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.right,
                 controller: re_password,
                 decoration: InputDecoration(
                   labelText: 'Repetir contraseña',

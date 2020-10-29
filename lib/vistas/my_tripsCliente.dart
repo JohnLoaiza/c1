@@ -2,7 +2,9 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:conectcarga/chat_screenCliente.dart';
 import 'package:conectcarga/data/shared_preferences_helper.dart';
+import 'package:conectcarga/homechatCliente.dart';
 import 'package:conectcarga/tools/CustomTextStyle.dart';
 import 'package:conectcarga/tools/app_data.dart';
 import 'package:conectcarga/tools/app_tools.dart';
@@ -126,7 +128,7 @@ class _OrdenesListState extends State<OrdenesList> {
                         onTap: () {
                           // Navigator.push(context, MaterialPageRoute(builder: (context)=>TripInfo(carServices:carServices[position])));
                           // log("tapdwndet ..$tapdowndet");
-                          _showAlertDialog("Comfirmar Servicio",_users[index]['FirstName'].toString(),context,_users[index]['OrderNumber'].toString(),
+                          _showAlertDialog("Comfirmar Servicio",_users[index]['FirstName'].toString(),context,_users[index]['OrderId'].toString(),
                               _users[index]['OrderTotal'].toString(),_users[index]['Address1'].toString(),_users[index]['Address2'].toString(),_users[index]['Peso'].toString(),_users[index]['metros'].toString());
                           // print("onTap called.");
                         },
@@ -135,6 +137,10 @@ class _OrdenesListState extends State<OrdenesList> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)),
                           child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.green, width: 1),
+                              borderRadius: BorderRadius.circular(8)
+                            ),
                             padding: EdgeInsets.all(4),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -183,7 +189,7 @@ class _OrdenesListState extends State<OrdenesList> {
                                           _Peso(_users[index]),
                                           // '${_users[index].carCustomer}',
                                           style: CustomTextStyle.mediumTextStyle.copyWith(
-                                              color: Colors.black54, fontSize: 11),
+                                              color: Colors.black54, fontSize: 13),
                                         ),
                                       ),
                                       Container(
@@ -192,7 +198,7 @@ class _OrdenesListState extends State<OrdenesList> {
                                           _Metros(_users[index]),
                                           // '${_users[index].carCustomer}',
                                           style: CustomTextStyle.mediumTextStyle.copyWith(
-                                              color: Colors.black54, fontSize: 11),
+                                              color: Colors.black54, fontSize: 13),
                                         ),
                                       )
                                     ]
@@ -271,9 +277,9 @@ class _OrdenesListState extends State<OrdenesList> {
                 child: SizedBox(
                   width: 200.0,
                   // height: 30.0,
-                  child: AutoSizeText(
+                  child: Text(
                     "$prefi : $address",
-                    maxLines: 2,
+                    maxLines: 2, style: TextStyle(fontSize: 16.5),
 
                   ),
                 ),
@@ -316,6 +322,7 @@ class _OrdenesListState extends State<OrdenesList> {
             content: Text(""+contenido+"\nOrden: "+id+"\nValor: "+valor+"\nOrigen: "+origen+"\nDestino: "+destino+"\nPeso: "+peso+"\nVolumen: "+volumen),
             actions: <Widget>[
               RaisedButton(
+                color: Color(0xFF2daae1),
                 child: Text("Cerrar", style: TextStyle(color: Colors.white),),
                 onPressed: (){
                   Navigator.of(context, rootNavigator: true).pop('dialog');
@@ -327,6 +334,16 @@ class _OrdenesListState extends State<OrdenesList> {
                   // Navigator.of(context, rootNavigator: true).pop('dialog');
                   Navigator.push(context, MaterialPageRoute(builder: (context) => RateService()));
                   Navigator.push(context, MaterialPageRoute(builder: (context) => GenerateScreen(objstr:id)));
+                },
+              ),
+
+              RaisedButton.icon(
+                icon: Icon(Icons.chat, color: Colors.white,),
+                label: Text("Chat", style: TextStyle(color: Colors.white),),color: Color(0xFF2daae1),
+                onPressed: (){
+                  // Navigator.of(context, rootNavigator: true).pop('dialog');
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomePageChatC(id)));
+
                 },
               )
             ],
@@ -353,6 +370,7 @@ class _OrdenesListState extends State<OrdenesList> {
 
   @override
   Widget build(BuildContext context) {
+    int index;
     time = startTimeout(15000);
     //time = new Future.delayed(const Duration(milliseconds: 5000), handleTimeout);
     //sub = time.asStream().listen((_) => print('Timer Update Ofertas'));
@@ -427,20 +445,6 @@ class _OrdenesListState extends State<OrdenesList> {
               onTap: () {
                 Navigator.of(context).push(new CupertinoPageRoute(
                     builder: (BuildContext context) => new GirliesHistoryC()));
-              },
-            ),
-            new ListTile(
-              leading: new CircleAvatar(
-                child: new Icon(
-                  Icons.chat_bubble,
-                  color: Colors.white,
-                  size: 20.0,
-                ),
-              ),
-              title: new Text("Chat"),
-              onTap: () {
-                Navigator.of(context).push(new CupertinoPageRoute(
-                    builder: (BuildContext context) => new HomePageChat()));
               },
             ),
             new Divider(),
